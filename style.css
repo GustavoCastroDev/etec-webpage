@@ -1,0 +1,12 @@
+/* Importando a fonte 'Poppins' */
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+/* formatando todos os elementos da página com a fonte */  
+*{
+    font-family: "Poppins";
+}
