@@ -44,10 +44,10 @@
                         <a class="nav-link" href="#sobrenos">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cursos</a>
+                        <a class="nav-link" href="#curso">Cursos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="#contato">Contato</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -58,7 +58,7 @@
     </nav>
 
     <!--Importando carrossel de imagens-->
-    <div id="carouselExampleIndicators" class="carousel carousel-dark slide">
+    <div id="carouselExampleIndicators" class="carousel carousel-dark slide" href="#carrosel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -92,6 +92,9 @@
     <br>
     <br>
     <br>
+    <br>
+    <br>
+    <br>
     <div class="col-10 m-auto" id="sobrenos">
         <h1 class="text-center" style="font-weight: 700;">Sobre nós</h1>
         <h5 class="text-center">
@@ -107,12 +110,14 @@
         <br>
         <br>
         <br>
+        <hr class="hr">
+        <br>
+        <br>
+        <br>
     </div>
-
-    <hr class="hr">
     <br>
 
-    <h1 class="text-center" style="font-weight: 700;">Cursos</h1>
+    <h1 class="text-center" style="font-weight: 700;" href="#curso">Cursos</h1>
     <!--Importando cards-->
     <div class="row row-cols-1 row-cols-md-3 g-4 col-11 m-auto">
         <div class="col">
@@ -153,32 +158,50 @@
     <br>
     <br>
     <br>
-    <footer class="footer col-12">
-        <div class="img-rodape col-4">
-            <a href="index.html">
-                <img src="img/logo-cps.png" class="img-fluid"
-                    style="height: 150px; padding-left: 6%; margin-top: 50px;">
-            </a>
+    <footer class="footer col-12 m-auto">
+        <div class="d-flex justify-content-start align-items-center">
+            <!-- Div com a imagem -->
+            <div class="img-rodape col-4">
+                <a href="index.html">
+                    <img src="img/logo-cps.png" class="img-fluid"
+                        style="height: 150px; padding-left: 50px; margin-top: 50px;">
+                </a>
+            </div>
+
+            <!-- Primeira div de informações -->
+            <div class="footer-info col-4" style="padding-left: 50px;">
+                <a class="nav-link"
+                    style="font-weight: 700; background-color: black; color: white; border: none;">Links</a>
+                <br>
+                <a class="nav-link" href="#carrosel"
+                    style="font-weight: 400; background-color: black; color: white; border: none;">Imagens</a>
+                <br>
+                <a class="nav-link" href="#sobrenos"
+                    style="font-weight: 400; background-color: black; color: white; border: none;">Sobre</a>
+                <br>
+                <a class="nav-link" href="#curso"
+                    style="font-weight: 400; background-color: black; color: white; border: none;">Cursos</a>
+            </div>
+
+            <!-- Segunda div de informações -->
+            <div class="footer-info col-4">
+                <li class="list-group-item"
+                    style="font-weight: 700; background-color: black; color: white; border: none;">Contato</li>
+                <li class="list-group-item"
+                    style="font-weight: 400; background-color: black; color: white; border: none;">Seg. a Sex. das
+                    07:30 às 23:00</li>
+                <li class="list-group-item"
+                    style="font-weight: 400; background-color: black; color: white; border: none;">(11) 2087-2544
+                </li>
+                <li class="list-group-item"
+                    style="font-weight: 400; background-color: black; color: white; border: none;">R. Cristobal
+                    Cláudio Elilo, 88 - Parque Cecap</li>
+            </div>
         </div>
-
-        <div class="footer-info m-auto col-8">
-            <!--Importando list group com bootstrap-->
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item" style="font-weight: 700;">Links</li>
-                <li class="list-group-item" style="font-weight: 400;">A second item</li>
-                <li class="list-group-item" style="font-weight: 400;">A third item</li>
-                <li class="list-group-item" style="font-weight: 400;">A fourth item</li>
-            </ul>
-
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item" style="font-weight: 700;">Links</li>
-                <li class="list-group-item" style="font-weight: 400;">A second item</li>
-                <li class="list-group-item" style="font-weight: 400;">A third item</li>
-                <li class="list-group-item" style="font-weight: 400;">A fourth item</li>
-            </ul>
-        </div>
-
     </footer>
+
+
+
 
     <!--Importando o cdn do js do bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
